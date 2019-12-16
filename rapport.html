@@ -1,0 +1,175 @@
+<!doctype html>
+<html lang="fr"><head>
+   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+   <meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+   <meta name="Author" content="Bolzonella Guillaume">
+   <meta name="Keywords" content="Rapport SIA Space Invader">
+   <link rel="stylesheet" href="rapport/css/style.css" type="text/css">
+   <title>Rapport SIA Space Invader</title>
+</head>
+                                                                               
+                                                                           
+<body><h1>Compte rendu SIA Space Invader</h1>
+
+<h2>Deroulement du jeu</h2>
+
+<p> <b>Un écran d'accueil affiche le nom du jeu et les touches associées aux actions disponibles.</b></p>
+
+<p> Il est possible de voir les touches en utilisant la touche H qui est indiqué en haut a droite de l'écran.</p>
+<img
+    src="rapport/images/help.png" 
+    height="300px" 
+    width="600px"
+    align="center"
+/>
+
+
+</br></br>
+<p> <b>Le joueur gagne le niveau courant quand son vaisseau a réussi à détruire entièrement les astéroides prévues pour ce niveau en tirant dessus.</b></p>
+
+<p> Le jeu commencer au niveau 1 et si tous les asteroides sont détruit celui-ci change pour passer au niveau 2 et ainsi dessuite.</p>
+<img
+    src="rapport/images/niveau.png" 
+    height="300px" 
+    width="600px"
+    align="center"
+/>
+
+
+</br></br>
+<p> <b>La partie proprement dite continue en passant les niveaux tant que les 3 vies n'ont pas été perdues.</b></p>
+
+<p>En bas a droite est indiquer le nombre de bouclier de vie restant, si il y a colision alors qu'il n'y a plus de bouclier, la partie est perdu.</p>
+<img
+    src="rapport/images/Nbbouclier.png" 
+    height="300px" 
+    width="600px"
+    align="center"
+/>
+
+
+</br></br>
+<p> <b>La fin de partie affiche "Game Over" et le score. Un événement (souris ou clavier) permet de revenir à la page d'accueil.</b></p>
+
+<p>Lorsque que la partie est perdu, il faut presser Enter pour recommancer le jeu.</p>
+<img
+    src="rapport/images/Defaite.png" 
+    height="300px" 
+    width="600px"
+    align="center"
+/>
+
+
+
+</br></br></br></br>
+<h2>Technologies logicielles</h2>
+
+
+<p><b>Le jeu devra tourner dans un navigateur Web et sera constitué de primitives graphiques 3D animées. </b></p>
+
+<p> Pour cela j'ai utilisé différents objets de type "dae" que se soit pour les vaisseau ou les asteroides</p>
+</br></br>
+
+<p><b>La principale contrainte logicielle est de s'appuyer sur la bibliothèque Three.js.</b></p>
+
+<p> J'ai utilisé principalement three.js pour la creation/gestion de la scene et des objets </p>
+</br></br>
+
+<p><b>Vous pouvez utiliser autant de bibliothèques auxiliaires que vous le souhaiterez du moment qu'une courte justification en soit faite dans le rapport.</b></p>
+
+<p> J'ai utilisé principalement diférentes bibliothéques comme :  
+   <ul>
+      <li>ColladaLoader.js</li>
+      <li>OrbitControls.js</li>
+      <li>keydrown.js</li>
+   </ul>
+   ColladaLoader.js : pour pouvoir charger des objet (type dae par exemple)</br>
+   OrbitControls.js : pour la gestion mouvements</br>
+   keydrown.js : pour la gestion des touches du clavier</br>
+</p>
+</br></br>
+
+
+<h2>Fenêtre graphique 3D</h2>
+
+<p>
+      <ul>
+            <li>Adaptation dynamique de la taille de la fenêtre = OUI</li>
+            <li>Passage en plein écran (touche 'f' comme "fullscreen") = OUI</li>
+            <li>Capture d'écran (touche 'p' comme "print") = OUI</li>
+      </ul>
+</p>
+
+</br></br>
+<h2>Architecture logicielle</h2>
+<p>
+    <ul>
+          <li>Respect architecture logicielle = OUI</li>
+    </ul>
+</p>
+
+</br></br>
+<h2>Graphisme</h2>
+<p>
+    <ul>
+          <li> Les entités du jeu doivent avoir un aspect 3D.   = OUI</li>
+          <li> Les vaisseaux et astéroïdes doivent être animés (puissance de la fusée, rotation de l'astéroide, explosions, ...).= >NON</li>
+          <li> Prévoir un décors 3D derrière les entités (pas un simple fond noir).= OUI</li>
+          <li> Soignez l'aspect des entités en leurs attribuant divers matériaux et textures.= OUI</li>
+          <li> Inclure au moins un effet de post-processing (désactivable) parmi ceux proposés par Three.js.= NON</li>
+    </ul>
+</p>
+
+</br></br>
+<h2>Dialogues avec l'utilisateur</h2>
+<p>
+    <ul>
+          <li> Message lors de la transition d'un niveau à l'autre = OUI</li>
+          <li> Affichage par la touche 'h' du récapitulatif des raccourcis clavier disponibles = OUI</li>
+    </ul>
+</p>
+</br></br>
+<h2>Points de vue caméra</h2>
+<p>
+    <ul>
+          <li> une fixe par rapport au plateau,  = OUI</li>
+          <li> une deuxième mobile attachée au vaisseau du joueur principal (touche '1'). = NON</li>
+    </ul>
+</p>
+</br></br>
+<h2>Gestion des collisions</h2>
+<p>
+    <ul>
+          <li> Les missiles disparaissent quand ils ont touché un astéroïde.  = OUI</li>
+          <li> Le vaisseau explose s'il est touché par un astéroïde ou un missile de vaisseau ennemi. = OUI</li>
+          <li> astéroïdes touchés éclatent en plusieurs morceaux ayant des trajectoires réalistes. = OUI</li>
+    </ul>
+</p>
+</br></br>
+<h2>Dynamique</h2>
+<p>
+    <ul>
+            <li> Les astéroïdes suivent des trajectoires linéaires aléatoires = OUI</li>
+            <li> Le vaisseau est créé au centre du plateau. Il peut tourner, avancer ou freiner avec les touches.= OUI</li>
+            <li> Le vaisseau tire des missiles avec la barre d'espace. Ces missiles perdent leur capacité de détruire au delà d'une certaine distance.= OUI</li>
+            <li> Le plateau de jeu est périodique : un objet passant par un bord réapparait au bord opposé.= OUI</li>
+    </ul>
+</p>
+</br></br>
+<p><b> </b></p>
+
+<p> </p>
+<img
+    src="rapport/images/Defaite.png" 
+    height="300px" 
+    width="600px"
+    align="center"
+/>
+
+
+<hr width="50%" align="left"> 
+<p> <b>Bolzonella Guillaume</b></p>
+
+
+
+</body></html>

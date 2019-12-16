@@ -1,0 +1,123 @@
+@font-face{
+    font-family: 'police';
+    src: url('font/Dead-Space-Title.ttf')
+}
+body {
+    padding: 0;
+    margin: 0;
+    font-size: 100%;
+    overflow: hidden;
+    color: white;
+    background-color: blue;
+}
+#centre, #level{
+    z-index: 5;
+    visibility: hidden;
+    position: absolute;
+    margin: 0px;
+    padding: 10px;
+    width: 100%;
+    text-align: center;
+    display: table-cell;
+    color: #ffffff;
+    background-color: rgba(173, 150, 10, 0.2);
+    vertical-align: middle;
+}
+#acceuil, #niveau{
+    z-index: 5;
+    width: 100%;
+    visibility: hidden;
+    position: absolute;
+    bottom: 50%;
+    min-height: 20%;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+#base1{
+    color: white;
+    font-size: 1.5em;
+    font-family: police;
+}
+
+#Perdu{
+    color:red;
+    font-size: 5em;
+    font-family: police;
+}
+#titre{
+    color: rgb(255, 217, 0);
+    font-size: 5em;
+    font-family: police;
+}
+#Base2{
+    color: #b30000;
+    font-size: 1.5em;
+    font-family: police;
+}
+#FinDuJeu{
+    color: rgb(132, 0, 255);
+    font-size: 5em;
+    font-family: police;
+}
+#Niveau{
+    color: #16f302;
+    font-size: 5em;
+    font-family: police;
+}
+#Description {
+    text-align: center;
+    text-decoration: none;
+    position: absolute;
+    font-family: police;
+    font-size: 1.8em;
+    background-color: rgb(255, 251, 2);
+    width: 600px;
+    min-width: 600px;
+    height: 250px;
+    margin: auto;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    padding: 5px;
+}
+.red{
+    color : rgb(187, 23, 105);
+}
+.noir{
+    color : rgb(0, 0, 0);
+}
+#Description_Helps {
+    text-align: center;
+    text-decoration: none;
+    position: absolute;
+    font-family: police;
+    font-size: 1.2em;
+    color:red;
+    background-color: rgb(255, 251, 2);
+    width: 120px;
+    min-width: 120px;
+    height: 28px;
+    margin: auto;
+    right: 0;
+    top: 0;
+    /*padding: 5px;*/
+}
+#Description_Bouclier {
+    text-align: center;
+    text-decoration: none;
+    position: absolute;
+    font-family: police;
+    font-size: 3em;
+    color:red;
+    background-color: rgb(255, 251, 2);
+    width: 80px;
+    height: 50px;
+    margin: auto;
+    left: 0;
+    bottom: 0;
+    /*padding: 5px;*/
+}
